@@ -7,7 +7,7 @@
   <!-- <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>juancaricodev</title>
 </head>
 <body>
@@ -17,25 +17,54 @@
         <img src="./assets/img/favicon.png" alt="juancaricodev" class="navbar__logo-icon" />
         <p>juancarico<span>dev</span></p>
       </a>
-      <ul class="navbar__menu">
-        <li><a class="navbar__menu-item" href="#about">About</a></li>
-        <li><a class="navbar__menu-item" href="#projects">Projects</a></li>
-        <li><a class="navbar__menu-item" href="#cv">CV</a></li>
-      </ul>
+      <div class="navbar__menu">
+        <ul class="navbar__menu-options">
+          <li><a class="navbar__menu-item" href="#about">About</a></li>
+          <li><a class="navbar__menu-item" href="#projects">Projects</a></li>
+          <li><a class="navbar__menu-item" href="#cv">CV</a></li>
+        </ul>
+        <div class="navbar__menu-vl"></div>
+        <ul class="navbar__menu-contact">
+          <li>
+            <a href="https://github.com/juancaricodev" target="_blank">
+              <img src="./assets/icons/github.svg" alt="github icon" class="navbar__menu-contact-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/juancaricodev/" target="_blank">
+              <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="navbar__menu-contact-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/juancaricodev" target="_blank">
+              <img src="./assets/icons/twitter.svg" alt="twitter icon" class="navbar__menu-contact-icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <section class="about" id="about">
-    <h1 class="about__title">About Me</h1>
-    <p class="about__content">
-      I'm Juanca, and I'm a software developer with over one year of experience in Front-End Development. I'm specialized in JavaScript.
-    </p>
-  </section>
+  <main>
+    <!-- TODO: Change content -->
+    <section class="about" id="about">
+      <h1 class="about__title">About Me</h1>
+      <p class="about__content">
+        I'm Juanca, and I'm a software developer with over one year of experience in Front-End Development. I'm specialized in JavaScript.
+      </p>
+    </section>
 
-  <section class="projects"></section>
+    <!-- TODO: -->
+    <section class="projects"></section>
 
-  <section class="cv"></section>
+    <!-- TODO: -->
+    <section class="cv"></section>
 
+    <!-- TODO: -->
+    <section class="contact"></section>
+  </main>
+
+  <!-- TODO: -->
   <footer>
     <h5>&#169; 2020 - 2021</h5>
     <div class="footer__follow">
