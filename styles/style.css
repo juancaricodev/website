@@ -98,9 +98,15 @@ header {
 .about__title {
   margin-bottom: 15px;
 }
+.about__content br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 30%;
+}
 
 p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 footer {
