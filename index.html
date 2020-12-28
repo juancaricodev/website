@@ -31,9 +31,15 @@
     }
 
     /* Navbar */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
     .navbar {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 20px;
       font-weight: bold;
     }
@@ -54,24 +60,61 @@
     }
     .navbar__menu-item {
       color: var(--main-text-color);
+      transition: 0.3s;
     }
     .navbar__menu-item:hover {
       color: var(--bold-text-color);
     }
 
+    /* About */
+    .about {
+      padding: 20px 30%;
+      margin-top: 100px;
+    }
+    .about__title {
+      margin-bottom: 15px;
+    }
+
     p {
-      font-size: 16px;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      display: none;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <a href="#" class="navbar__logo">juancarico<span>dev</span></a>
-    <ul class="navbar__menu">
-      <li><a class="navbar__menu-item" href="#about">About</a></li>
-      <li><a class="navbar__menu-item" href="#projects">Projects</a></li>
-      <li><a class="navbar__menu-item" href="#cv">CV</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">juancarico<span>dev</span></a>
+      <ul class="navbar__menu">
+        <li><a class="navbar__menu-item" href="#about">About</a></li>
+        <li><a class="navbar__menu-item" href="#projects">Projects</a></li>
+        <li><a class="navbar__menu-item" href="#cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about" id="about">
+    <h1 class="about__title">About Me</h1>
+    <p class="about__content">
+      I'm Juanca, and I'm a software developer with over one year of experience in Front-End Development. I'm specialized in JavaScript.
+    </p>
+  </section>
+
+  <section class="projects"></section>
+
+  <section class="cv"></section>
+
+  <footer>
+    <h5>&#169; 2020 - 2021</h5>
+    <div class="footer__follow">
+      <img src="" alt="GitHub">
+      <img src="" alt="LinkedIn">
+      <img src="" alt="Twitter">
+    </div>
+  </footer>
 </body>
 </html>
