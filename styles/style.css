@@ -75,15 +75,19 @@ header {
   display: flex;
   list-style-type: none;
   font-size: 20px;
-  gap: 15px;
+  gap: 5px;
   font-weight: bold;
 }
 .navbar__menu-item {
   color: var(--main-text-color);
   transition: 0.3s;
+  border: 1px solid var(--bg-color);
+  border-radius: 7px;
+  padding: 2px 5px;
 }
 .navbar__menu-item:hover {
-  color: var(--bold-text-color);
+  background-color: var(--bold-text-color);
+  color: var(--bg-color);
 }
 .navbar__menu-vl {
   border-left: 3px solid var(--main-text-color);
