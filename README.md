@@ -1,5 +1,7 @@
-# Website of juancaricodev
+# juancarico.dev
 
-With this project the website is going to be developed.
+Personal portfolio website.
 
-WIP.
+## Watch it [here](https://juancarico.dev/)!
+## Preview
+![preview](./assets/img/preview.png)

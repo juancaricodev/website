@@ -3,37 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <title>juancaricodev</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>juancarico.dev</title>
 </head>
-<style>
-  * {
-    /* font-family: 'Didact Gothic', sans-serif; */
-    /* font-family: 'Istok Web', sans-serif; */
-    font-family: 'Manrope', sans-serif;
-  }
-
-  body {
-    background-color: rgb(242, 242, 242);
-  }
-
-  .title {
-    color: rgb(45, 45, 45);
-    text-align: center;
-  }
-  .title span {
-    color: rgb(42, 98, 172);
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 16px;
-    /* font-weight: bold; */
-  }
-</style>
 <body>
-  <h1 class="title">Welcome to juancarico<span>dev</span></h1>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">
+        <img src="./assets/img/favicon.png" alt="juancaricodev" class="navbar__logo-icon" />
+        <p>juancarico<span>dev</span></p>
+      </a>
+      <div class="navbar__menu">
+        <ul class="navbar__menu-options">
+          <li><a class="navbar__menu-item" href="#about">About</a></li>
+          <li><a class="navbar__menu-item" href="#work">Work</a></li>
+          <li><a class="navbar__menu-item" href="#contact" style="display: none;">Contact</a></li>
+          <li><a class="navbar__menu-item" href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank">CV</a></li>
+        </ul>
+        <div class="navbar__menu-vl"></div>
+        <ul class="navbar__menu-contact">
+          <li>
+            <a href="https://github.com/juancaricodev" target="_blank">
+              <img src="./assets/icons/github.svg" alt="github icon" class="navbar__menu-contact-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/juancaricodev/" target="_blank">
+              <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="navbar__menu-contact-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/juancaricodev" target="_blank">
+              <img src="./assets/icons/twitter.svg" alt="twitter icon" class="navbar__menu-contact-icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <h1 class="about__title">About Me</h1>
+      <p class="about__content">
+        I'm a web developer based in Bogotá, Colombia, with over five years of experience in the software industry.
+        <br /> When I'm not playing guitar or cooking, I enjoy coding and digging into technology.
+        <br /> I worked for five years as a technical support engineer. That way developed the skills needed to understand the clients being the connection between them and the development department, managing to plan software implementation, providing training, and solving database-related problems.
+        <br /> I started developing software as a front-end developer in 2019, working with the MERN Stack essentially. I have a great time bringing together different technologies for developing websites and applications.
+        <!-- Early in 2020 I got part of the Platzi Master program, a personalized software development program, offered monthly to the best 0,1&percnt; of Platzi students. -->
+      </p>
+    </section>
+
+    <section class="work" id="work">
+      <h1 class="work__title">Work</h1>
+      <p class="work__description">
+        My work as a web developer includes the MERN Stack, counting with experience with CSS preprocessors, relational databases and other technologies. This is the stack of thechnologies I've worked with:
+      </p>
+      <div class="work__stack">
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">Languages</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/html5.svg" alt="html5 logo">
+              <p>HTML5</p>
+            </li>
+            <li>
+              <img src="./assets/icons/css3.svg" alt="css3 logo">
+              <p>CSS3</p>
+            </li>
+            <li>
+              <img src="./assets/icons/javascript.svg" alt="javascript icon">
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img src="./assets/icons/typescript.svg" alt="typescript icon">
+              <p>TypeScript</p>
+            </li>
+            <li>
+              <img src="./assets/icons/python.png" alt="python icon">
+              <p>Python</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">Frameworks / Libraries</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/react.svg" alt="react logo">
+              <p>React</p>
+            </li>
+            <li>
+              <img src="./assets/icons/redux.svg" alt="redux logo">
+              <p>Redux</p>
+            </li>
+            <li>
+              <img src="./assets/icons/react-router.png" alt="react-router logo">
+              <p>React Router</p>
+            </li>
+            <li>
+              <img src="./assets/icons/angular.svg" alt="angular icon">
+              <p>Angular</p>
+            </li>
+            <li>
+              <img src="./assets/icons/expressjs.svg" alt="nodejs icon">
+              <p>Express.js</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">Other Technologies</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/nodejs.svg" alt="nodejs logo">
+              <p>Node.js</p>
+            </li>
+            <li>
+              <img src="./assets/icons/webpack.svg" alt="webpack logo">
+              <p>Webpack</p>
+            </li>
+            <li>
+              <img src="./assets/icons/styled-components.png" alt="styled-components logo">
+              <p>styled-components</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">CSS Preprocessors</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/sass.svg" alt="sass logo">
+              <p>Sass</p>
+            </li>
+            <li>
+              <img src="./assets/icons/stylus.svg" alt="stylus logo">
+              <p>Stylus</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">Linters / Formatters</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/eslint.svg" alt="eslint logo">
+              <p>ESLint</p>
+            </li>
+            <li>
+              <img src="./assets/icons/standardjs.svg" alt="standard-js logo">
+              <p>Standard JS</p>
+            </li>
+            <li>
+              <img src="./assets/icons/prettier.png" alt="prettier logo">
+              <p>Prettier</p>
+            </li>
+            <li>
+              <img src="./assets/icons/husky.svg" alt="husky logo">
+              <p>Husky</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">Databases</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/sql-server.svg" alt="sql-server logo">
+              <p>SQL Server</p>
+            </li>
+            <li>
+              <img src="./assets/icons/mysql.svg" alt="mysql logo">
+              <p>MySQL</p>
+            </li>
+            <li>
+              <img src="./assets/icons/mongodb.svg" alt="mongodb logo">
+              <p>MongoDB</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__stack-section">
+          <h3 class="work__stack-section-title">Version Control</h3>
+          <ul class="work__stack-section-content">
+            <li>
+              <img src="./assets/icons/git.png" alt="git logo">
+              <p>Git</p>
+            </li>
+            <li>
+              <img src="./assets/icons/github.svg" alt="github logo">
+              <p>GitHub</p>
+            </li>
+            <li>
+              <img src="./assets/icons/gitlab.svg" alt="gitlab logo">
+              <p>GitLab</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" style="display: none;">
+      <h1 class="contact__title">Contact</h1>
+
+      <form class="contact__form" action="" method="POST" enctype="" name="">
+        <div class="contact__form-name contact__form-field">
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div class="contact__form-lastname contact__form-field">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+
+        <div class="contact__form-email contact__form-field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="contact__form-message contact__form-field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__description">
+      <a href="#" class="footer__description-logo">
+        <img src="./assets/img/favicon.png" alt="juancaricodev" class="footer__description-logo-icon" />
+        <p>juancarico<span>dev</span></p>
+      </a>
+      <p>&#169; 2021</p>
+    </div>
+
+    <div class="footer__vl"></div>
+
+    <div class="footer__contact">
+      <p class="footer__contact-email">me@juancarico.dev</p>
+      <ul>
+        <li>
+          <a href="https://github.com/juancaricodev" target="_blank">
+            <img src="./assets/icons/github.svg" alt="github icon" class="footer__contact-icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/juancaricodev/" target="_blank">
+            <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="footer__contact-icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/juancaricodev" target="_blank">
+            <img src="./assets/icons/twitter.svg" alt="twitter icon" class="footer__contact-icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
