@@ -21,7 +21,7 @@
         <ul class="navbar__menu-options">
           <li><a class="navbar__menu-item" href="#about">About</a></li>
           <li><a class="navbar__menu-item" href="#work">Work</a></li>
-          <li><a class="navbar__menu-item" href="#contact">Contact</a></li>
+          <li><a class="navbar__menu-item" href="#contact" style="display: none;">Contact</a></li>
           <li><a class="navbar__menu-item" href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank">CV</a></li>
         </ul>
         <div class="navbar__menu-vl"></div>
@@ -208,30 +208,31 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" style="display: none;">
       <h1 class="contact__title">Contact</h1>
-      <form class="contact__form" action="">
+
+      <form class="contact__form" action="" method="POST" enctype="" name="">
         <div class="contact__form-name contact__form-field">
-          <label for="">First Name</label>
-          <input type="text" name="" id="" />
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" />
         </div>
 
         <div class="contact__form-lastname contact__form-field">
-          <label for="">Last Name</label>
-          <input type="text" name="" id="" />
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" />
         </div>
 
         <div class="contact__form-email contact__form-field">
-          <label for="">Email</label>
-          <input type="email" name="" id="" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
         </div>
 
         <div class="contact__form-message contact__form-field">
-          <label for="">Message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </div>
 
-        <button>Send</button>
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
