@@ -1,11 +1,11 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBgUHFu7CWjIycRgMY5YMqV1aZLP8GBhOM",
-    authDomain: "contact-form-eb6be.firebaseapp.com",
-    projectId: "contact-form-eb6be",
-    storageBucket: "contact-form-eb6be.appspot.com",
-    messagingSenderId: "665877994355",
-    appId: "1:665877994355:web:5c425f5c9ca7da887f8306"
+    apiKey: 'AIzaSyBgUHFu7CWjIycRgMY5YMqV1aZLP8GBhOM',
+    authDomain: 'contact-form-eb6be.firebaseapp.com',
+    projectId: 'contact-form-eb6be',
+    storageBucket: 'contact-form-eb6be.appspot.com',
+    messagingSenderId: '665877994355',
+    appId: '1:665877994355:web:5c425f5c9ca7da887f8306'
   }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
@@ -28,6 +28,9 @@ function submitForm(e) {
 
   // Save message
   saveMessage(name, company, email, message)
+
+  // Send email
+  sendEmail(name, company, email, message)
 }
 
 // Function to get form values
@@ -63,5 +66,30 @@ function saveMessage(name, company, email, message) {
 
     // Show successful alert
     document.querySelector('.contact__form-fail').style.display = 'block'
+  })
+}
+
+// Send email with message
+function sendEmail(name, company, email, message ) {
+  Email.send({
+    Host : 'smtp.gmail.com',
+    Username : 'juancarico0528@gmail.com',
+    Password : 'ojaqldynlkjhqkgi',
+    To : 'juancaricodev@gmail.com',
+    From : 'form@juancarico.dev',
+    Subject : `[juancarico.dev] ${name} from the company ${company} sent you a message`,
+    Body : `
+    <strong>Name</strong>: ${name} <br>
+    <strong>Company</strong>: ${company} <br>
+    <strong>Email</strong>: ${email} <br><br>
+    <strong>Message</strong>:<br> ${message} <br><br>
+    <i>This message was sent from the contact form in <strong>juancarico.dev</strong></i>
+    `
+  })
+  .then(message => {
+    console.log(`Email successfully sent => ${message}`)
+  })
+  .catch(error => {
+    console.error(`Error sending email => ${error}`)
   })
 }
