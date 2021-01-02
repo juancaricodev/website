@@ -223,6 +223,28 @@ main {
 .contact__form-message {
   grid-row: 4;
 }
+.contact__form-success {
+  grid-row: 5;
+  background-color: rgb(0, 196, 137);
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--bg-color);
+  border-radius: 7px;
+  display: none;
+  transition: 0.3s;
+}
+.contact__form-fail {
+  grid-row: 5;
+  background-color: rgb(255, 66, 66);
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--bg-color);
+  border-radius: 7px;
+  display: none;
+  transition: 0.3s;
+}
 .contact__form label {
   font-weight: bold;
   margin-bottom: 5px;
@@ -244,7 +266,7 @@ main {
   font-size: 18px;
 }
 .contact__form button {
-  grid-row: 5;
+  grid-row: 6;
   justify-self: center;
   width: 100px;
   height: 40px;

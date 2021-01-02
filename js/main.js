@@ -45,9 +45,23 @@ function saveMessage(name, company, email, message) {
     date: firebase.firestore.FieldValue.serverTimestamp()
   })
   .then(() => {
-    console.log(`Message saved`)
+    // Hide error if shown
+    document.querySelector('.contact__form-fail').style.display = 'none'
+
+    // Show successful alert
+    document.querySelector('.contact__form-success').style.display = 'block'
+    // Clear form
+    document.getElementById('contactForm').reset()
+
+    // Hide alert
+    setTimeout(() => {
+      document.querySelector('.contact__form-success').style.display = 'none'
+    }, 5000);
   })
   .catch(error => {
     console.error(`Error saving message => ${error}`)
+
+    // Show successful alert
+    document.querySelector('.contact__form-fail').style.display = 'block'
   })
 }
