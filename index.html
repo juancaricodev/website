@@ -19,10 +19,10 @@
       </a>
       <div class="navbar__menu">
         <ul class="navbar__menu-options">
-          <li><a class="navbar__menu-item" href="#about">About</a></li>
-          <li><a class="navbar__menu-item" href="#work">Work</a></li>
-          <li><a class="navbar__menu-item" href="#contact">Contact</a></li>
-          <li><a class="navbar__menu-item" href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank">CV</a></li>
+          <li><a href="#about"><p class="navbar__menu-item">About</p></a></li>
+          <li><a href="#work"><p class="navbar__menu-item">Work</p></a></li>
+          <li><a href="#contact"><p class="navbar__menu-item">Contact</p></a></li>
+          <li><a href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank"><p class="navbar__menu-item">CV</p></a></li>
         </ul>
         <div class="navbar__menu-vl"></div>
         <ul class="navbar__menu-contact">
@@ -45,6 +45,39 @@
       </div>
     </nav>
   </header>
+
+  <div class="mobile-navbar active">
+    <ul class="mobile-navbar-options">
+      <li><a class="mobile-navbar-item" href="#about">About</a></li>
+      <li><a class="mobile-navbar-item" href="#work">Work</a></li>
+      <li><a class="mobile-navbar-item" href="#contact">Contact</a></li>
+      <li><a class="mobile-navbar-item" href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank">CV</a></li>
+    </ul>
+    <div class="mobile-navbar-vl"></div>
+    <ul class="mobile-navbar-contact">
+      <li>
+        <a href="https://github.com/juancaricodev" target="_blank">
+          <img src="./assets/icons/github.svg" alt="github icon" class="mobile-navbar-contact-icon" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/juancaricodev/" target="_blank">
+          <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="mobile-navbar-contact-icon" />
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/juancaricodev" target="_blank">
+          <img src="./assets/icons/twitter.svg" alt="twitter icon" class="mobile-navbar-contact-icon" />
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" onclick="dropMenu(this)">
+    <div class="mobile-menu__i bar1"></div>
+    <div class="mobile-menu__i bar2"></div>
+    <div class="mobile-menu__i bar3"></div>
+  </div>
 
   <main>
     <section class="about" id="about">
