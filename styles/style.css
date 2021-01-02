@@ -219,13 +219,17 @@ main {
   grid-column: 2;
   grid-row: 1;
 }
-.contact__form-email {
+.contact__form-company {
   grid-column: 1 / span 2;
   grid-row: 2;
 }
-.contact__form-message {
+.contact__form-email {
   grid-column: 1 / span 2;
   grid-row: 3;
+}
+.contact__form-message {
+  grid-column: 1 / span 2;
+  grid-row: 4;
 }
 .contact__form label {
   font-weight: bold;
@@ -249,7 +253,7 @@ main {
 }
 .contact__form button {
   grid-column: 1 / span 2;
-  grid-row: 4;
+  grid-row: 5;
   justify-self: center;
   width: 100px;
   height: 40px;
