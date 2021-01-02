@@ -211,11 +211,10 @@
     <section class="contact" id="contact">
       <h1 class="contact__title">Contact</h1>
 
-      <!-- TODO: Validation -->
       <form class="contact__form" id="contactForm" action="" method="" enctype="" name="">
         <div class="contact__form-name contact__form-field">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
+          <label for="name">Name <span class="contact__form-field-val">*</span></label>
+          <input type="text" name="name" id="name" required />
         </div>
 
         <div class="contact__form-company contact__form-field">
@@ -224,13 +223,13 @@
         </div>
 
         <div class="contact__form-email contact__form-field">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <label for="email">Email <span class="contact__form-field-val">*</span></label>
+          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" required />
         </div>
 
         <div class="contact__form-message contact__form-field">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="7"></textarea>
+          <label for="message">Message <span class="contact__form-field-val">*</span></label>
+          <textarea name="message" id="message" cols="30" rows="7" required></textarea>
         </div>
 
         <div class="contact__form-success">

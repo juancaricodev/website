@@ -11,6 +11,8 @@
   --main-text-color: rgb(45, 45, 45);
   --bold-text-color:  rgb(42, 98, 172);
   --border-color: var(--bold-text-color);
+  --warning-color: rgb(255, 66, 66);
+  --success-color: rgb(0, 196, 137);
 }
 
 body {
@@ -211,6 +213,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+.contact__form-field-val {
+  color: var(--warning-color);
+}
 .contact__form-name {
   grid-row: 1;
 }
@@ -225,7 +230,7 @@ main {
 }
 .contact__form-success {
   grid-row: 5;
-  background-color: rgb(0, 196, 137);
+  background-color: var(--success-color);
   text-align: center;
   padding: 10px;
   font-weight: 600;
@@ -236,7 +241,7 @@ main {
 }
 .contact__form-fail {
   grid-row: 5;
-  background-color: rgb(255, 66, 66);
+  background-color: var(--warning-color);
   text-align: center;
   padding: 10px;
   font-weight: 600;
