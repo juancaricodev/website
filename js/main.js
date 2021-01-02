@@ -1,3 +1,22 @@
+// Mobile menu
+const menu = document.querySelector('.mobile-navbar')
+const menuButton = document.querySelector('#mobile-menu')
+
+menuButton.addEventListener('click', showMenu)
+
+function showMenu() {
+  if (menu.classList.contains('active')) {
+    menu.classList.remove('active')
+  } else {
+    menu.classList.add('active')
+  }
+}
+
+function dropMenu(x) {
+  x.classList.toggle('drop-menu')
+}
+
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: 'AIzaSyBgUHFu7CWjIycRgMY5YMqV1aZLP8GBhOM',
