@@ -214,13 +214,8 @@
       <!-- TODO: Validation -->
       <form class="contact__form" id="contactForm" action="" method="" enctype="" name="">
         <div class="contact__form-name contact__form-field">
-          <label for="name">First Name</label>
+          <label for="name">Name</label>
           <input type="text" name="name" id="name" />
-        </div>
-
-        <div class="contact__form-lastname contact__form-field">
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" />
         </div>
 
         <div class="contact__form-company contact__form-field">
@@ -235,7 +230,7 @@
 
         <div class="contact__form-message contact__form-field">
           <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea name="message" id="message" cols="30" rows="7"></textarea>
         </div>
 
         <button type="submit">Send</button>
@@ -277,6 +272,8 @@
   </footer>
 
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

@@ -202,7 +202,7 @@ main {
 }
 .contact__form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   gap: 20px;
   padding: 0 10%;
@@ -212,23 +212,15 @@ main {
   flex-direction: column;
 }
 .contact__form-name {
-  grid-column: 1;
-  grid-row: 1;
-}
-.contact__form-lastname {
-  grid-column: 2;
   grid-row: 1;
 }
 .contact__form-company {
-  grid-column: 1 / span 2;
   grid-row: 2;
 }
 .contact__form-email {
-  grid-column: 1 / span 2;
   grid-row: 3;
 }
 .contact__form-message {
-  grid-column: 1 / span 2;
   grid-row: 4;
 }
 .contact__form label {
@@ -252,7 +244,6 @@ main {
   font-size: 18px;
 }
 .contact__form button {
-  grid-column: 1 / span 2;
   grid-row: 5;
   justify-self: center;
   width: 100px;
