@@ -21,7 +21,7 @@
         <ul class="navbar__menu-options">
           <li><a class="navbar__menu-item" href="#about">About</a></li>
           <li><a class="navbar__menu-item" href="#work">Work</a></li>
-          <li><a class="navbar__menu-item" href="#contact" style="display: none;">Contact</a></li>
+          <li><a class="navbar__menu-item" href="#contact">Contact</a></li>
           <li><a class="navbar__menu-item" href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank">CV</a></li>
         </ul>
         <div class="navbar__menu-vl"></div>
@@ -208,28 +208,36 @@
       </div>
     </section>
 
-    <section class="contact" id="contact" style="display: none;">
+    <section class="contact" id="contact">
       <h1 class="contact__title">Contact</h1>
 
-      <form class="contact__form" action="" method="POST" enctype="" name="">
+      <form class="contact__form" id="contactForm" action="" method="" enctype="" name="">
         <div class="contact__form-name contact__form-field">
-          <label for="name">First Name</label>
-          <input type="text" name="name" id="name" />
+          <label for="name">Name <span class="contact__form-field-val">*</span></label>
+          <input type="text" name="name" id="name" required />
         </div>
 
-        <div class="contact__form-lastname contact__form-field">
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" />
+        <div class="contact__form-company contact__form-field">
+          <label for="company">Company</label>
+          <input type="text" name="company" id="company" />
         </div>
 
         <div class="contact__form-email contact__form-field">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <label for="email">Email <span class="contact__form-field-val">*</span></label>
+          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" required />
         </div>
 
         <div class="contact__form-message contact__form-field">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <label for="message">Message <span class="contact__form-field-val">*</span></label>
+          <textarea name="message" id="message" cols="30" rows="7" required></textarea>
+        </div>
+
+        <div class="contact__form-success">
+          Your message was successfully sent!
+        </div>
+
+        <div class="contact__form-fail">
+          Something went wrong. Please, try again or write an email to this address: me@juancarico.dev
         </div>
 
         <button type="submit">Send</button>
@@ -269,5 +277,10 @@
       </ul>
     </div>
   </footer>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

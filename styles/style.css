@@ -11,6 +11,8 @@
   --main-text-color: rgb(45, 45, 45);
   --bold-text-color:  rgb(42, 98, 172);
   --border-color: var(--bold-text-color);
+  --warning-color: rgb(255, 66, 66);
+  --success-color: rgb(0, 196, 137);
 }
 
 body {
@@ -202,7 +204,7 @@ main {
 }
 .contact__form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   gap: 20px;
   padding: 0 10%;
@@ -211,21 +213,42 @@ main {
   display: flex;
   flex-direction: column;
 }
+.contact__form-field-val {
+  color: var(--warning-color);
+}
 .contact__form-name {
-  grid-column: 1;
   grid-row: 1;
 }
-.contact__form-lastname {
-  grid-column: 2;
-  grid-row: 1;
-}
-.contact__form-email {
-  grid-column: 1 / span 2;
+.contact__form-company {
   grid-row: 2;
 }
-.contact__form-message {
-  grid-column: 1 / span 2;
+.contact__form-email {
   grid-row: 3;
+}
+.contact__form-message {
+  grid-row: 4;
+}
+.contact__form-success {
+  grid-row: 5;
+  background-color: var(--success-color);
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--bg-color);
+  border-radius: 7px;
+  display: none;
+  transition: 0.3s;
+}
+.contact__form-fail {
+  grid-row: 5;
+  background-color: var(--warning-color);
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--bg-color);
+  border-radius: 7px;
+  display: none;
+  transition: 0.3s;
 }
 .contact__form label {
   font-weight: bold;
@@ -248,8 +271,7 @@ main {
   font-size: 18px;
 }
 .contact__form button {
-  grid-column: 1 / span 2;
-  grid-row: 4;
+  grid-row: 6;
   justify-self: center;
   width: 100px;
   height: 40px;
