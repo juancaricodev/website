@@ -42,25 +42,3 @@ h3 {
 p {
   font-size: 20px;
 }
-
-
-
-@media only screen and (max-width: 425px) {
-  /* footer */
-  footer {
-    flex-direction: column;
-    height: 200px;
-  }
-  .footer__vl {
-    display: none;
-  }
-  .footer__description > p {
-    text-align: center;
-  }
-  .footer__contact-email {
-    justify-content: center;
-  }
-  .footer__contact ul {
-    justify-content: center;
-  }
-}
