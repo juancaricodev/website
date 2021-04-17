@@ -1,0 +1,222 @@
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 30px;
+}
+
+/* About */
+.about {
+  padding: 20px 15% 20px 0;
+  margin-top: 100px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.about__title {
+  margin-bottom: 15px;
+  color: var(--color-blue);
+}
+.about__content br {
+  margin: 2em;
+  display: block;
+  content: "";
+  font-size: 30%;
+}
+
+/* Work */
+.work {
+  padding: 20px 0;
+  grid-column: 2;
+  grid-row: 2;
+}
+.work__title {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-blue);
+}
+.work__description {
+  padding: 0 0 0 15%;
+  text-align: right;
+}
+.work__stack {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.work__stack-section {
+  min-width: 200px;
+  min-height: 200px;
+  padding: 5px 10px 15px 10px;
+  border: solid var(--color-blue) 2px;
+  border-radius: 10px;
+}
+.work__stack-section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.work__stack-section-content img {
+  width: 30px;
+}
+.work__stack-section-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.work__stack-section-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+/* Contact */
+.contact {
+  padding: 20px 0;
+  margin-top: 50px;
+  grid-column: 2;
+  grid-row: 3;
+}
+.contact__title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--color-blue);
+}
+.contact__form {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+}
+.contact__form-field {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-field-val {
+  color: var(--color-warning);
+}
+.contact__form-name {
+  grid-row: 1;
+}
+.contact__form-company {
+  grid-row: 2;
+}
+.contact__form-email {
+  grid-row: 3;
+}
+.contact__form-message {
+  grid-row: 4;
+}
+.contact__form-success {
+  padding: 10px;
+  display: none;
+  grid-row: 5;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-white);
+  border-radius: 7px;
+  background-color: var(--color-success);
+  transition: 0.3s;
+}
+.contact__form-fail {
+  padding: 10px;
+  display: none;
+  grid-row: 5;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-white);
+  border-radius: 7px;
+  background-color: var(--color-warning);
+  transition: 0.3s;
+}
+.contact__form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18.72px;
+}
+.contact__form input {
+  height: 30px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 2px solid var(--color-blue);
+  border-radius: 10px;
+  outline: none;
+}
+.contact__form textarea {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid var(--color-blue);
+  border-radius: 10px;
+  outline: none;
+}
+.contact__form button {
+  width: 100px;
+  height: 40px;
+  grid-row: 6;
+  justify-self: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-white);
+  border: 2px solid var(--color-blue);
+  border-radius: 7px;
+  background: var(--color-blue);
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+.contact__form button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    padding: 20px;
+    grid-column: 1;
+  }
+  .work {
+    padding: 20px;
+    grid-column: 1;
+  }
+  .work__title {
+    justify-content: flex-start;
+  }
+  .work__description {
+    padding: 0;
+    text-align: left;
+  }
+  .contact {
+    grid-column: 1;
+  }
+  .contact__form input {
+    max-width: 100%;
+    margin: 0;
+  }
+  .contact__form textarea {
+    max-width: 100%;
+    margin: 0;
+  }
+}

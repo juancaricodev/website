@@ -1,0 +1,44 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+* {
+  /* font-family: 'Didact Gothic', sans-serif; */
+  /* font-family: 'Istok Web', sans-serif; */
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white: rgb(242, 242, 242);
+  --color-black: rgb(45, 45, 45);
+  --color-blue:  rgb(42, 98, 172);
+  --color-warning: rgb(255, 66, 66);
+  --color-success: rgb(0, 196, 137);
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+a, u, ul, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+p {
+  font-size: 20px;
+}
