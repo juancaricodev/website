@@ -43,54 +43,9 @@ p {
   font-size: 20px;
 }
 
-/* Responsive */
-@media only screen and (max-width: 1024px) {
-  main {
-    display: grid;
-    grid-template-columns: 5% auto 5%;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 30px;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .about {
-    margin-top: 20px;
-  }
-}
 
 @media only screen and (max-width: 425px) {
-  /* main */
-  main {
-    grid-template-columns: 1fr;
-  }
-  .about {
-    padding: 20px;
-    grid-column: 1;
-  }
-  .work {
-    padding: 20px;
-    grid-column: 1;
-  }
-  .work__title {
-    justify-content: flex-start;
-  }
-  .work__description {
-    padding: 0;
-    text-align: left;
-  }
-  .contact {
-    grid-column: 1;
-  }
-  .contact__form input {
-    max-width: 100%;
-    margin: 0;
-  }
-  .contact__form textarea {
-    max-width: 100%;
-    margin: 0;
-  }
-
   /* footer */
   footer {
     flex-direction: column;
