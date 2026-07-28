@@ -39,38 +39,47 @@ main {
   border: solid var(--color-blue) 2px;
   border-radius: 10px;
 }
+.experience__item + .experience__item {
+  margin-top: 20px;
+}
 .experience__item-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .experience__item-header h2 {
   font-size: 23px;
   color: var(--color-blue);
 }
-.experience__item-roles {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+.experience__role {
   margin-bottom: 15px;
 }
-.experience__item-roles span {
-  font-size: 18px;
-  font-weight: 500;
+.experience__role:last-child {
+  margin-bottom: 0;
 }
-.experience__item-achievements {
-  margin-bottom: 15px;
+.experience__role-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.experience__role-title em {
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+}
+.experience__role-achievements {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
 }
-.experience__item-achievements li {
-  font-size: 18px;
+.experience__role-achievements li {
+  font-size: 17px;
   list-style-type: disc;
+  line-height: 1.4;
 }
 .experience__item-stack {
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -91,8 +100,6 @@ main {
 }
 .work__title {
   margin-bottom: 15px;
-  display: flex;
-  justify-content: flex-end;
   color: var(--color-blue);
 }
 .work__description {
@@ -186,7 +193,6 @@ main {
 }
 .contact__title {
   margin-bottom: 20px;
-  text-align: center;
   color: var(--color-blue);
 }
 .contact__form {
@@ -313,9 +319,6 @@ main {
   .work {
     padding: 20px;
     grid-column: 1;
-  }
-  .work__title {
-    justify-content: flex-start;
   }
   .work__item-links {
     flex-direction: column;

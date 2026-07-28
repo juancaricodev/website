@@ -85,21 +85,31 @@
 
     <section class="experience" id="experience">
       <h1 class="experience__title">Experience</h1>
+
       <div class="experience__item">
         <div class="experience__item-header">
           <h2>Mercado Libre</h2>
           <span>May 2021 – Dec 2024</span>
         </div>
-        <div class="experience__item-roles">
-          <span>Software Engineer <em>(2023–2024)</em></span>
-          <span>Development Analyst <em>(2021–2023)</em></span>
+
+        <div class="experience__role">
+          <p class="experience__role-title">Software Engineer <em>— Mar 2023 – Dec 2024</em></p>
+          <ul class="experience__role-achievements">
+            <li>Led technical design for seller marketing tools — catalog sync with Meta and TikTok, Ads creation</li>
+            <li>Designed BI dashboards using Looker and Tableau to measure feature adoption and guide product decisions</li>
+            <li>Managed production incidents during on-call rotations (DataDog, New Relic), coordinating cross-functional response</li>
+          </ul>
         </div>
-        <ul class="experience__item-achievements">
-          <li>Led technical design of seller marketing tools — catalog sync with Meta and TikTok, ad creation and management</li>
-          <li>Built BI dashboards with Looker and Tableau to measure feature adoption and user behavior</li>
-          <li>Mentored two senior engineers during onboarding, recognized as key factor in promotion</li>
-          <li>Managed production on-call — traffic, latency and availability monitoring with DataDog and New Relic</li>
-        </ul>
+
+        <div class="experience__role">
+          <p class="experience__role-title">Development Analyst <em>— May 2021 – Mar 2023</em></p>
+          <ul class="experience__role-achievements">
+            <li>Built SSR micro-frontends with headless CMS architecture (React + TypeScript), optimizing performance and SEO</li>
+            <li>Contributed backend endpoints in Go and Java — learned independently to reduce backend team workload</li>
+            <li>Mentored two senior engineers during onboarding, recognized as key factor in promotion to Software Engineer</li>
+          </ul>
+        </div>
+
         <div class="experience__item-stack">
           <span>React</span>
           <span>TypeScript</span>
@@ -112,13 +122,28 @@
           <span>New Relic</span>
         </div>
       </div>
+
+      <div class="experience__item">
+        <div class="experience__item-header">
+          <h2>Seico Technology</h2>
+          <span>May 2020 – Aug 2020</span>
+        </div>
+        <div class="experience__role">
+          <p class="experience__role-title">Frontend Developer</p>
+          <ul class="experience__role-achievements">
+            <li>Created a complete Design System using SCSS, BEM, and Atomic Design methodology</li>
+            <li>Contributed to redesign and refactoring of the QualyFlight application</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="work" id="work">
       <h1 class="work__title">Projects</h1>
       <div class="work__item">
         <h2>Flag Pilot</h2>
-        <p>Feature Flag Management System — create, manage, and evaluate feature flags with real-time targeting and gradual rollouts. Built from scratch with a focus on clean architecture and developer experience.</p>
+        <p>Feature flag management system with a real-time dashboard, client SDK for flag evaluation, and role-based access control.
+Full-stack monorepo with CI/CD, Docker containerization, and automated deployment on AWS EC2 and Vercel. 272 tests.</p>
         <div class="work__item-stack">
           <span>Next.js 16</span>
           <span>NestJS</span>
@@ -134,7 +159,8 @@
 
       <div class="work__item">
         <h2>Pomodoro Timer</h2>
-        <p>A fully-tested Pomodoro Timer built with Hexagonal Architecture — clear separation between domain, application, and infrastructure layers with 52 tests covering every use case.</p>
+        <p>Interactive Pomodoro timer with testing, CI/CD, and automated deployment via Vercel. Hexagonal architecture with domain,
+application, and infrastructure separation. 52 tests.</p>
         <div class="work__item-stack">
           <span>React</span>
           <span>TypeScript</span>
@@ -178,7 +204,7 @@
         </div>
 
         <div class="contact__form-fail">
-          Something went wrong. Please, try again or write an email to this address: me@juancarico.dev
+          Something went wrong. Please, try again or write an email to this address: juancaricodev@gmail.com
         </div>
 
         <button type="submit">Send</button>
@@ -198,7 +224,7 @@
     <div class="footer__vl"></div>
 
     <div class="footer__contact">
-      <p class="footer__contact-email">me@juancarico.dev</p>
+      <p class="footer__contact-email">juancaricodev@gmail.com</p>
       <ul>
         <li>
           <a href="https://github.com/juancaricodev" target="_blank">
