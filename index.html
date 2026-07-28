@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="./styles/styles.css">
-  <title>juancarico.dev</title>
+  <meta name="description" content="Juan Camilo Rico — Senior Frontend Engineer. React, TypeScript, Next.js. Ex-Mercado Libre. Building Flag Pilot.">
+  <title>Juan Camilo Rico — Senior Frontend Engineer</title>
 </head>
 <body>
   <header>
@@ -20,7 +21,8 @@
       <div class="navbar__menu">
         <ul class="navbar__menu-options">
           <li><a href="#about"><p class="navbar__menu-item">About</p></a></li>
-          <li><a href="#work"><p class="navbar__menu-item">Work</p></a></li>
+          <li><a href="#experience"><p class="navbar__menu-item">Experience</p></a></li>
+          <li><a href="#work"><p class="navbar__menu-item">Projects</p></a></li>
           <li><a href="#contact"><p class="navbar__menu-item">Contact</p></a></li>
           <li><a href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank"><p class="navbar__menu-item">CV</p></a></li>
         </ul>
@@ -36,11 +38,6 @@
               <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="navbar__menu-contact-icon" />
             </a>
           </li>
-          <li>
-            <a href="https://twitter.com/juancaricodev" target="_blank">
-              <img src="./assets/icons/twitter.svg" alt="twitter icon" class="navbar__menu-contact-icon" />
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -49,7 +46,8 @@
   <div class="mobile-navbar active">
     <ul class="mobile-navbar-options">
       <li><a class="mobile-navbar-item" href="#about">About</a></li>
-      <li><a class="mobile-navbar-item" href="#work">Work</a></li>
+      <li><a class="mobile-navbar-item" href="#experience">Experience</a></li>
+      <li><a class="mobile-navbar-item" href="#work">Projects</a></li>
       <li><a class="mobile-navbar-item" href="#contact">Contact</a></li>
       <li><a class="mobile-navbar-item" href="https://github.com/juancaricodev/cv/blob/main/cv.pdf" target="_blank">CV</a></li>
     </ul>
@@ -65,11 +63,6 @@
           <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="mobile-navbar-contact-icon" />
         </a>
       </li>
-      <li>
-        <a href="https://twitter.com/juancaricodev" target="_blank">
-          <img src="./assets/icons/twitter.svg" alt="twitter icon" class="mobile-navbar-contact-icon" />
-        </a>
-      </li>
     </ul>
   </div>
 
@@ -83,160 +76,75 @@
     <section class="about" id="about">
       <h1 class="about__title">About Me</h1>
       <p class="about__content">
-        I'm a web developer based in Bogotá, Colombia, with over five years of experience in the software industry.
-        <br /> When I'm not playing guitar or cooking, I enjoy coding and digging into technology.
-        <br /> I worked for five years as a technical support engineer. That way developed the skills needed to understand the clients being the connection between them and the development department, managing to plan software implementation, providing training, and solving database-related problems.
-        <br /> I started developing software as a front-end developer in 2019, working with the MERN Stack essentially. I have a great time bringing together different technologies for developing websites and applications.
-        <!-- Early in 2020 I got part of the Platzi Master program, a personalized software development program, offered monthly to the best 0,1&percnt; of Platzi students. -->
+        I'm a Software Engineer with 4+ years of experience building web products at scale at Mercado Libre. After an intentional sabbatical year dedicated to music and personal projects, I'm now returning to development with renewed energy — currently building Flag Pilot, a feature flag management system with Next.js 16, NestJS, PostgreSQL, and AWS.
+        <br /><br /> My background combines a strong Frontend focus (React, TypeScript, Next.js, SSR micro-frontends) with hands-on experience in Backend (REST APIs with Node.js, Go, and Java), analytics (Looker, Tableau), and production infrastructure (DataDog, New Relic, CI/CD).
+        <br /><br /> At Mercado Libre, I contributed to building marketing tools for sellers — catalog sync with Meta and TikTok, Ad creation — impacting thousands of merchants across Latin America. I also designed BI dashboards to measure feature adoption, managed production incidents during on-call rotations, and actively participated in architectural decisions.
+        <br /><br /> When I'm not coding, I'm making music.
       </p>
     </section>
 
+    <section class="experience" id="experience">
+      <h1 class="experience__title">Experience</h1>
+      <div class="experience__item">
+        <div class="experience__item-header">
+          <h2>Mercado Libre</h2>
+          <span>May 2021 – Dec 2024</span>
+        </div>
+        <div class="experience__item-roles">
+          <span>Software Engineer <em>(2023–2024)</em></span>
+          <span>Development Analyst <em>(2021–2023)</em></span>
+        </div>
+        <ul class="experience__item-achievements">
+          <li>Led technical design of seller marketing tools — catalog sync with Meta and TikTok, ad creation and management</li>
+          <li>Built BI dashboards with Looker and Tableau to measure feature adoption and user behavior</li>
+          <li>Mentored two senior engineers during onboarding, recognized as key factor in promotion</li>
+          <li>Managed production on-call — traffic, latency and availability monitoring with DataDog and New Relic</li>
+        </ul>
+        <div class="experience__item-stack">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Next.js</span>
+          <span>Node.js</span>
+          <span>Go</span>
+          <span>Java</span>
+          <span>PostgreSQL</span>
+          <span>DataDog</span>
+          <span>New Relic</span>
+        </div>
+      </div>
+    </section>
+
     <section class="work" id="work">
-      <h1 class="work__title">Work</h1>
-      <p class="work__description">
-        My work as a web developer includes the MERN Stack, counting with experience with CSS preprocessors, relational databases and other technologies. This is the stack of thechnologies I've worked with:
-      </p>
-      <div class="work__stack">
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">Languages</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/html5.svg" alt="html5 logo">
-              <p>HTML5</p>
-            </li>
-            <li>
-              <img src="./assets/icons/css3.svg" alt="css3 logo">
-              <p>CSS3</p>
-            </li>
-            <li>
-              <img src="./assets/icons/javascript.svg" alt="javascript icon">
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <img src="./assets/icons/typescript.svg" alt="typescript icon">
-              <p>TypeScript</p>
-            </li>
-            <li>
-              <img src="./assets/icons/python.png" alt="python icon">
-              <p>Python</p>
-            </li>
-          </ul>
+      <h1 class="work__title">Projects</h1>
+      <div class="work__item">
+        <h2>Flag Pilot</h2>
+        <p>Feature Flag Management System — create, manage, and evaluate feature flags with real-time targeting and gradual rollouts. Built from scratch with a focus on clean architecture and developer experience.</p>
+        <div class="work__item-stack">
+          <span>Next.js 16</span>
+          <span>NestJS</span>
+          <span>PostgreSQL</span>
+          <span>Docker</span>
+          <span>AWS EC2</span>
         </div>
-
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">Frameworks / Libraries</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/react.svg" alt="react logo">
-              <p>React</p>
-            </li>
-            <li>
-              <img src="./assets/icons/redux.svg" alt="redux logo">
-              <p>Redux</p>
-            </li>
-            <li>
-              <img src="./assets/icons/react-router.png" alt="react-router logo">
-              <p>React Router</p>
-            </li>
-            <li>
-              <img src="./assets/icons/angular.svg" alt="angular icon">
-              <p>Angular</p>
-            </li>
-            <li>
-              <img src="./assets/icons/expressjs.svg" alt="nodejs icon">
-              <p>Express.js</p>
-            </li>
-          </ul>
+        <div class="work__item-links">
+          <a href="https://flag-pilot-dashboard.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/juancaricodev/flag-pilot" target="_blank">Source Code</a>
         </div>
+      </div>
 
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">Other Technologies</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/nodejs.svg" alt="nodejs logo">
-              <p>Node.js</p>
-            </li>
-            <li>
-              <img src="./assets/icons/webpack.svg" alt="webpack logo">
-              <p>Webpack</p>
-            </li>
-            <li>
-              <img src="./assets/icons/styled-components.png" alt="styled-components logo">
-              <p>styled-components</p>
-            </li>
-          </ul>
+      <div class="work__item">
+        <h2>Pomodoro Timer</h2>
+        <p>A fully-tested Pomodoro Timer built with Hexagonal Architecture — clear separation between domain, application, and infrastructure layers with 52 tests covering every use case.</p>
+        <div class="work__item-stack">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Vite</span>
+          <span>Vitest</span>
+          <span>Hexagonal Architecture</span>
         </div>
-
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">CSS Preprocessors</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/sass.svg" alt="sass logo">
-              <p>Sass</p>
-            </li>
-            <li>
-              <img src="./assets/icons/stylus.svg" alt="stylus logo">
-              <p>Stylus</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">Linters / Formatters</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/eslint.svg" alt="eslint logo">
-              <p>ESLint</p>
-            </li>
-            <li>
-              <img src="./assets/icons/standardjs.svg" alt="standard-js logo">
-              <p>Standard JS</p>
-            </li>
-            <li>
-              <img src="./assets/icons/prettier.png" alt="prettier logo">
-              <p>Prettier</p>
-            </li>
-            <li>
-              <img src="./assets/icons/husky.svg" alt="husky logo">
-              <p>Husky</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">Databases</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/sql-server.svg" alt="sql-server logo">
-              <p>SQL Server</p>
-            </li>
-            <li>
-              <img src="./assets/icons/mysql.svg" alt="mysql logo">
-              <p>MySQL</p>
-            </li>
-            <li>
-              <img src="./assets/icons/mongodb.svg" alt="mongodb logo">
-              <p>MongoDB</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="work__stack-section">
-          <h3 class="work__stack-section-title">Version Control</h3>
-          <ul class="work__stack-section-content">
-            <li>
-              <img src="./assets/icons/git.png" alt="git logo">
-              <p>Git</p>
-            </li>
-            <li>
-              <img src="./assets/icons/github.svg" alt="github logo">
-              <p>GitHub</p>
-            </li>
-            <li>
-              <img src="./assets/icons/gitlab.svg" alt="gitlab logo">
-              <p>GitLab</p>
-            </li>
-          </ul>
+        <div class="work__item-links">
+          <a href="https://pomodoro-timer-xi-fawn.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/juancaricodev/pomodoro-timer" target="_blank">Source Code</a>
         </div>
       </div>
     </section>
@@ -284,7 +192,7 @@
         <img src="./assets/img/favicon.png" alt="juancaricodev" class="footer__description-logo-icon" />
         <p>juancarico<span>dev</span></p>
       </a>
-      <p>&#169; 2021</p>
+      <p>&#169; 2026</p>
     </div>
 
     <div class="footer__vl"></div>
@@ -300,11 +208,6 @@
         <li>
           <a href="https://www.linkedin.com/in/juancaricodev/" target="_blank">
             <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="footer__contact-icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/juancaricodev" target="_blank">
-            <img src="./assets/icons/twitter.svg" alt="twitter icon" class="footer__contact-icon" />
           </a>
         </li>
       </ul>
