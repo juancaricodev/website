@@ -1,0 +1,83 @@
+.section {
+  padding: 20px 0;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: var(--color-blue);
+}
+
+.item {
+  padding: 20px;
+  border: solid var(--color-blue) 2px;
+  border-radius: 10px;
+}
+
+.item + .item {
+  margin-top: 20px;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.itemHeader h2 {
+  font-size: 23px;
+  color: var(--color-blue);
+}
+
+.role {
+  margin-bottom: 15px;
+}
+
+.role:last-child {
+  margin-bottom: 0;
+}
+
+.roleTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.roleTitle em {
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+}
+
+.achievements {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.achievements li {
+  font-size: 17px;
+  list-style-type: disc;
+  line-height: 1.4;
+}
+
+.stack {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack span {
+  padding: 4px 12px;
+  font-size: 13px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+  .section {
+    padding: 20px;
+  }
+}
