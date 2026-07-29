@@ -2,34 +2,93 @@
 
 ## Project Purpose
 
-Platform for Juan Camilo Rico (Senior Frontend Engineer) to showcase services, projects, and expertise — transitioning from a static portfolio to a service-promotion platform.
+Platform for Juan Camilo Rico (Senior Frontend Engineer) to showcase experience, projects, and expertise — transitioning from a static portfolio to a service-promotion platform.
 
-## Current State
+---
 
-- **Stack**: Vanilla HTML/CSS/JS (pre-migration)
-- **Deploy**: GitHub Pages (`juancaricodev.github.io/website`)
-- **Content**: Hardcoded in `index.html`
+## Stack
 
-## Target Architecture (in progress)
+| Layer | Current | Target (in progress) |
+|-------|---------|---------------------|
+| Framework | Vanilla HTML/CSS/JS | Next.js (App Router) |
+| Language | JavaScript | TypeScript |
+| Styling | CSS (BEM) | CSS Modules |
+| Deployment | GitHub Pages | TBD |
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js (App Router) |
-| Styling | TBD — CSS Modules vs Tailwind (pending evaluation) |
-| Page Composition | JSON-driven render bricks |
-| i18n | Pre-translated JSON structures per locale |
-| Rich Content | MDX for blog/articles |
+---
 
-## Phased Roadmap
+## Roadmap
 
-1. Next.js migration (current phase)
-2. JSON-driven render bricks + i18n
-3. Service templates expansion (ecommerce, dashboards, landing pages, native apps)
+See [ROADMAP.md](./ROADMAP.md) for the full strategic plan, phases, and backlog.
+
+---
+
+## Available Skills
+
+Project-level skills for AI-assisted development:
+
+| Skill | Description | URL |
+|-------|-------------|-----|
+| `nextjs-16` | App Router, layouts, metadata API, Server Components | [SKILL.md](./skills/nextjs-16/SKILL.md) |
+| `css-modules` | Scoping, composition, naming conventions, global vs module | [SKILL.md](./skills/css-modules/SKILL.md) |
+
+---
 
 ## Conventions
 
-- **Components**: Organize as reusable bricks with a shared `componentMap`
-- **Content**: Lives in structured JSON files, not hardcoded in components
-- **i18n**: Frontend is locale-agnostic — structures arrive pre-translated
-- **Commits**: Conventional commits (`feat:`, `fix:`, `docs:`, `chore:`)
-- **SDD**: Use Spec-Driven Development flow for significant changes (explore → propose → spec → tasks → apply → verify)
+### Commits
+
+Conventional commits:
+```
+feat: add user login
+fix: correct navbar z-index on mobile
+chore: update Next.js to 16.x
+docs: update README with deployment instructions
+```
+
+Types: `feat`, `fix`, `chore`, `docs`, `refactor`, `style`, `perf`, `test`.
+
+### Branching
+
+Conventional branches:
+```
+feat/component-name
+fix/bug-description
+chore/maintenance-task
+```
+
+Format: `type/description` — lowercase, no spaces.
+
+### Language
+
+All content inside this repository MUST be written in English — code, comments, commit messages, documentation, specs, issues, PRs. No exceptions.
+
+### SDD Workflow
+
+Use Spec-Driven Development for significant changes:
+```
+sdd-new <change-name> → propose → spec → tasks → apply → verify → archive
+```
+
+SDD artifacts live in `openspec/changes/<change-name>/`.
+
+---
+
+## Verification
+
+```bash
+# Build
+npm run build
+
+# Dev server
+npm run dev
+```
+
+---
+
+## Skills Index
+
+| Skill | Trigger | Path |
+|-------|---------|------|
+| `nextjs-16` | Next.js patterns, App Router, layouts | [SKILL.md](./skills/nextjs-16/SKILL.md) |
+| `css-modules` | CSS Modules patterns, scoping | [SKILL.md](./skills/css-modules/SKILL.md) |

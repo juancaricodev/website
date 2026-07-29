@@ -1,0 +1,40 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Vanilla HTML5, CSS3 (BEM methodology), JavaScript (ES6+)
+  Architecture: Static site — no framework, no build tools. CSS split into
+    component files (header.css, main.css, footer.css) imported via @import.
+    Migrating to Next.js (App Router) + TypeScript + CSS Modules.
+  Testing: No test runner detected
+  Style: BEM convention (current), CSS Modules (target), Manrope font
+
+strict_tdd: false
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Identify affected components/modules
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group tasks by phase (infrastructure, implementation, testing)
+    - Use hierarchical numbering (1.1, 1.2, etc.)
+    - Keep tasks small enough to complete in one session
+  apply:
+    - Follow conventional commits (feat:, fix:, chore:, docs:)
+    - Follow conventional branches (feat/, fix/, chore/)
+    - Load relevant project skills for the stack
+    tdd: false
+    test_command: ""
+  verify:
+    - Run build command to verify compilation
+    - Compare implementation against every spec scenario
+    test_command: ""
+    build_command: "npm run build || next build"
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas (large removals)
