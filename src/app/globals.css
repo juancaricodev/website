@@ -20,6 +20,7 @@ body {
   min-height: 100%;
   background-color: var(--color-white);
   color: var(--color-black);
+  font-family: var(--font-manrope);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

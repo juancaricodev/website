@@ -1,4 +1,5 @@
 .section {
+  grid-column: 2;
   padding: 20px 0;
 }
 
@@ -79,5 +80,6 @@
 @media only screen and (max-width: 425px) {
   .section {
     padding: 20px;
+    grid-column: 1;
   }
 }
