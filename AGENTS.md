@@ -22,7 +22,7 @@ Platform for Juan Camilo Rico (Senior Frontend Engineer) to showcase services, p
 
 ## Phased Roadmap
 
-1. Next.js + Tailwind migration (current phase)
+1. Next.js migration (current phase)
 2. JSON-driven render bricks + i18n
 3. Service templates expansion (ecommerce, dashboards, landing pages, native apps)
 
