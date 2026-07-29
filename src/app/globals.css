@@ -1,0 +1,49 @@
+:root {
+  --color-white: rgb(242, 242, 242);
+  --color-black: rgb(45, 45, 45);
+  --color-blue:  rgb(42, 98, 172);
+  --color-warning: rgb(255, 66, 66);
+  --color-success: rgb(0, 196, 137);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+u,
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+p {
+  font-size: 20px;
+}

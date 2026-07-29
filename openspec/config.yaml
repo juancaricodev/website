@@ -1,12 +1,11 @@
 schema: spec-driven
 
 context: |
-  Tech stack: Vanilla HTML5, CSS3 (BEM methodology), JavaScript (ES6+)
-  Architecture: Static site — no framework, no build tools. CSS split into
-    component files (header.css, main.css, footer.css) imported via @import.
-    Migrating to Next.js (App Router) + TypeScript + CSS Modules.
+  Tech stack: Next.js 16 (App Router), TypeScript, CSS Modules
+  Architecture: Migrating from vanilla static site to Next.js with
+    React components. CSS Modules replacing BEM. Assets in public/.
   Testing: No test runner detected
-  Style: BEM convention (current), CSS Modules (target), Manrope font
+  Style: CSS Modules, Manrope font
 
 strict_tdd: false
 
