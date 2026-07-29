@@ -1,0 +1,32 @@
+.section {
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: var(--color-blue);
+}
+
+.info {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+.info a {
+  color: var(--color-blue);
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.info a:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 425px) {
+  .section {
+    padding: 20px;
+  }
+}
