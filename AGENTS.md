@@ -15,8 +15,8 @@ Platform for Juan Camilo Rico (Senior Frontend Engineer) to showcase services, p
 | Layer | Technology |
 |-------|-----------|
 | Framework | Next.js (App Router) |
-| Styling | Tailwind CSS |
-| Page Composition | JSON-driven render bricks (Meli-style estructuras) |
+| Styling | TBD — CSS Modules vs Tailwind (pending evaluation) |
+| Page Composition | JSON-driven render bricks |
 | i18n | Pre-translated JSON structures per locale |
 | Rich Content | MDX for blog/articles |
 
