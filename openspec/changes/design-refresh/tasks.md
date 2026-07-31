@@ -2,10 +2,10 @@
 
 ## Phase 1: Foundation — `globals.css`
 
-- [ ] 1.1 Replace old 5-token palette with brand/neutral scales (50–900), alpha variants (`--color-brand-alpha-10/20`, `--color-neutral-alpha-10/20`), and semantic surface tokens (`--color-surface`, `--color-surface-raised`, `--color-border`, `--color-text-primary`, `--color-text-secondary`). Keep `--color-warning` and `--color-success` as-is.
-- [ ] 1.2 Add typography scale (`--font-size-display` through `--font-size-small`), line-height tokens (`--line-height-display`, `--line-height-heading`, `--line-height-body`, `--line-height-tight`), and font-weight tokens (`--font-weight-normal` through `--font-weight-bold`).
-- [ ] 1.3 Add spacing scale (`--space-xs` through `--space-3xl`).
-- [ ] 1.4 Add CSS dots pattern via `body::before` with `radial-gradient`, including `@media print { display: none }`.
+- [x] 1.1 Replace old 5-token palette with brand/neutral scales (50–900), alpha variants (`--color-brand-alpha-10/20`, `--color-neutral-alpha-10/20`), and semantic surface tokens (`--color-surface`, `--color-surface-raised`, `--color-border`, `--color-text-primary`, `--color-text-secondary`). Keep `--color-warning` and `--color-success` as-is.
+- [x] 1.2 Add typography scale (`--font-size-display` through `--font-size-small`), line-height tokens (`--line-height-display`, `--line-height-heading`, `--line-height-body`, `--line-height-tight`), and font-weight tokens (`--font-weight-normal` through `--font-weight-bold`).
+- [x] 1.3 Add spacing scale (`--space-xs` through `--space-3xl`).
+- [x] 1.4 Add CSS dots pattern via `body::before` with `radial-gradient`, including `@media print { display: none }`.
 
 ## Phase 2: Layout — `Home.module.css`
 
