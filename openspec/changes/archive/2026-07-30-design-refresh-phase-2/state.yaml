@@ -1,8 +1,8 @@
 schema: sdd-change
 change: design-refresh-phase-2
 created: 2026-07-30
-phase: proposal
+phase: archived
 description: >
   Component polish for juancarico.dev: cards, navbar, buttons, contact card,
   and footer, reusing the Phase 1 design token system.
-status: active
+status: archived
