@@ -7,9 +7,9 @@
 
 ---
 
-## Phase 1: Migrate to Next.js 🚀
+## Phase 1: Migrate to Next.js ✅
 
-**Status**: 🔄 Pending
+**Status**: ✅ Done
 **Target stack**: Next.js (App Router) + TypeScript + CSS Modules
 
 ### Goal
@@ -21,6 +21,9 @@ Migrate the static portfolio (vanilla HTML/CSS/JS) to Next.js while maintaining 
 - Move assets to `public/`
 - Replace inline JS with React state
 - Build and visual verification
+
+### Result
+Site deployed to [juancarico.dev](https://juancarico.dev) on Vercel with custom domain.
 
 ---
 

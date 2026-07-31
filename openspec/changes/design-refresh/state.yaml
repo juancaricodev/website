@@ -1,0 +1,8 @@
+schema: sdd-change
+change: design-refresh
+created: 2026-07-30
+phase: tasks
+description: >
+  Refresh the visual design of juancarico.dev inspired by Magic Portfolio
+  (Once UI system) without adopting the template or its dependencies.
+status: active
