@@ -20,6 +20,6 @@
 
 ## Phase 4: Verify
 
-- [ ] 4.1 Run `npm run build` — must pass with no errors.
-- [ ] 4.2 Visual check across 320px, 768px, 1440px viewports — no horizontal scroll, content centered, dots visible.
-- [ ] 4.3 Print check — dots hidden, content readable.
+- [x] 4.1 Run `npm run build` — must pass with no errors.
+- [x] 4.2 Visual check across 320px, 768px, 1440px viewports — no horizontal scroll, content centered, dots visible.
+- [x] 4.3 Print check — dots hidden, content readable.
