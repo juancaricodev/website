@@ -1,34 +1,18 @@
 .section {
-  grid-column: 2;
-  padding: 20px 15% 20px 0;
-  margin-top: 100px;
+  margin-top: var(--space-3xl);
 }
 
 .title {
-  margin-bottom: 15px;
-  color: var(--color-blue);
+  margin-bottom: var(--space-md);
+  color: var(--color-brand-600);
 }
 
 .content {
-  color: var(--color-black);
-}
-
-.content br {
-  margin: 2em;
-  display: block;
-  content: "";
-  font-size: 30%;
+  color: var(--color-text-primary);
 }
 
 @media only screen and (max-width: 768px) {
   .section {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .section {
-    padding: 20px;
-    grid-column: 1;
+    margin-top: var(--space-xl);
   }
 }

@@ -9,14 +9,14 @@
 
 ## Phase 2: Layout — `Home.module.css`
 
-- [ ] 2.1 Replace 3-column grid with centered flexbox column: `display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; padding: 0 24px; gap: var(--space-xl)`. Remove all `@media` breakpoint overrides.
+- [x] 2.1 Replace 3-column grid with centered flexbox column: `display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; padding: 0 24px; gap: var(--space-xl)`. Remove all `@media` breakpoint overrides.
 
 ## Phase 3: Component Cleanup — 4 CSS Modules
 
-- [ ] 3.1 `About.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Replace `margin-top: 100px` → `padding-top: var(--space-3xl)`. Remove horizontal padding from `.section`.
-- [ ] 3.2 `Experience.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Keep vertical padding.
-- [ ] 3.3 `Projects.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Keep vertical padding.
-- [ ] 3.4 `Contact.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Replace `margin-top: 50px` → `padding-top: var(--space-2xl)`.
+- [x] 3.1 `About.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Replace `margin-top: 100px` → `padding-top: var(--space-3xl)`. Remove horizontal padding from `.section`.
+- [x] 3.2 `Experience.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Keep vertical padding.
+- [x] 3.3 `Projects.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Keep vertical padding.
+- [x] 3.4 `Contact.module.css` — Remove `grid-column: 2` and 425px `grid-column: 1` override. Replace `margin-top: 50px` → `padding-top: var(--space-2xl)`.
 
 ## Phase 4: Verify
 

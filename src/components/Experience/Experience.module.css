@@ -1,37 +1,36 @@
 .section {
-  grid-column: 2;
-  padding: 20px 0;
+  padding: 0;
 }
 
 .title {
-  margin-bottom: 15px;
-  color: var(--color-blue);
+  margin-bottom: var(--space-md);
+  color: var(--color-brand-600);
 }
 
 .item {
-  padding: 20px;
-  border: solid var(--color-blue) 2px;
+  padding: var(--space-lg);
+  border: solid var(--color-brand-600) 2px;
   border-radius: 10px;
 }
 
 .item + .item {
-  margin-top: 20px;
+  margin-top: var(--space-lg);
 }
 
 .itemHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: var(--space-md);
 }
 
 .itemHeader h2 {
-  font-size: 23px;
-  color: var(--color-blue);
+  font-size: var(--font-size-h2);
+  color: var(--color-brand-600);
 }
 
 .role {
-  margin-bottom: 15px;
+  margin-bottom: var(--space-md);
 }
 
 .role:last-child {
@@ -39,47 +38,40 @@
 }
 
 .roleTitle {
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-xs);
 }
 
 .roleTitle em {
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   font-style: italic;
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
 .achievements {
-  padding-left: 20px;
+  padding-left: var(--space-lg);
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
 
 .achievements li {
-  font-size: 17px;
+  font-size: var(--font-size-body);
   list-style-type: disc;
-  line-height: 1.4;
+  line-height: var(--line-height-body);
 }
 
 .stack {
-  margin-top: 15px;
+  margin-top: var(--space-md);
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: var(--space-xs);
 }
 
 .stack span {
-  padding: 4px 12px;
-  font-size: 13px;
-  color: var(--color-white);
-  background-color: var(--color-blue);
+  padding: var(--space-xs) 12px;
+  font-size: var(--font-size-caption);
+  color: var(--color-neutral-50);
+  background-color: var(--color-brand-600);
   border-radius: 15px;
-}
-
-@media only screen and (max-width: 425px) {
-  .section {
-    padding: 20px;
-    grid-column: 1;
-  }
 }

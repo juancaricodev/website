@@ -1,34 +1,25 @@
 .section {
-  grid-column: 2;
-  padding: 20px 0;
-  margin-top: 50px;
+  margin-top: var(--space-2xl);
 }
 
 .title {
-  margin-bottom: 20px;
-  color: var(--color-blue);
+  margin-bottom: var(--space-lg);
+  color: var(--color-brand-600);
 }
 
 .info {
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--color-black);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
 }
 
 .info a {
-  color: var(--color-blue);
-  font-weight: 600;
-  transition: 0.3s;
+  color: var(--color-brand-600);
+  font-weight: var(--font-weight-semibold);
+  transition: opacity 0.3s;
   text-decoration: none;
 }
 
 .info a:hover {
   opacity: 0.7;
-}
-
-@media only screen and (max-width: 425px) {
-  .section {
-    padding: 20px;
-    grid-column: 1;
-  }
 }
