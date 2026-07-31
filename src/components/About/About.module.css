@@ -2,13 +2,8 @@
   margin-top: var(--space-3xl);
 }
 
-.title {
-  margin-bottom: var(--space-md);
-  color: var(--color-brand-600);
-}
-
 .name {
-  font-size: var(--font-size-display);
+  font-size: var(--font-size-hero);
   line-height: var(--line-height-display);
   color: var(--color-text-primary);
   margin-bottom: var(--space-md);

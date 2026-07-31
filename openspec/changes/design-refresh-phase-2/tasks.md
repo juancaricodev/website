@@ -16,7 +16,8 @@
 
 ## Phase 3: About + Contact
 
-- [x] 3.1 `About.tsx` + `About.module.css` — "About Me" becomes h2 (keeps `styles.title`); NEW h1 with the owner's full name "Juan Camilo Rico" (display 48px, `--line-height-display`, class `styles.name`); NO role tagline (owner rejected); bio split into 4 `<p>` at existing `<br /><br />` boundaries, ALL text preserved verbatim, `<br />` removed; `id="about"` stays on the section. This is the ONLY TSX edit for the headline.
+- [x] 3.1 `About.tsx` + `About.module.css` — h1 becomes the name (display 48px, `--line-height-display`); NO role tagline (owner rejected); bio split into 4 `<p>` at existing `<br /><br />` boundaries, ALL text preserved verbatim, `<br />` removed; `id="about"` stays on the section. This is the ONLY TSX edit for the headline.
+- [x] 3.3 Post-review fix (owner, 2026-07-30): About headline refined — h1 text changes to "Juanca Rico"; REMOVE the "About Me" h2 (name h1 is the section's only heading); font-size 48px → 40px via NEW token `--font-size-hero: 40px` added to `globals.css` (deliberate, owner-approved deviation from the no-globals constraint). Update `About.module.css` `.name` to `var(--font-size-hero)` and remove the now-unused `.title` rule. Keep `--line-height-display`.
 - [x] 3.2 `Contact.tsx` + `Contact.module.css` — Wrap section content in `<div className={styles.card}>`; card: `var(--color-surface-raised)` + `1px solid var(--color-border)` + `border-radius: 12px` + `padding: var(--space-xl)` + static `box-shadow: 0 4px 16px var(--color-neutral-alpha-10)`; centered text; email link `--color-brand-600` → hover `--color-brand-500` + focus ring.
 
 ## Phase 4: Footer
@@ -25,7 +26,7 @@
 
 ## Phase 5: Verify
 
-- [ ] 5.1 Run `npm run build` — must exit 0 with no errors.
-- [ ] 5.2 Visual check at 320px / 768px / 1440px — no horizontal scroll; card headers wrap + burger/drawer usable at 320px; drawer breakpoint boundary intact at 768px; navbar + footer aligned to the 720px column and full-width footer border at 1440px+.
-- [ ] 5.3 Keyboard walkthrough — Tab through navbar links, project buttons, contact link, drawer; focus rings visible everywhere.
-- [ ] 5.4 About content diff — bio text identical pre/post change; `#about` anchor still works; no role tagline present.
+- [x] 5.1 Run `npm run build` — must exit 0 with no errors.
+- [x] 5.2 Visual check at 320px / 768px / 1440px — no horizontal scroll; card headers wrap + burger/drawer usable at 320px; drawer breakpoint boundary intact at 768px; navbar + footer aligned to the 720px column and full-width footer border at 1440px+.
+- [x] 5.3 Keyboard walkthrough — Tab through navbar links, project buttons, contact link, drawer; focus rings visible everywhere.
+- [x] 5.4 About content diff — bio text identical pre/post change; `#about` anchor still works; no role tagline present.

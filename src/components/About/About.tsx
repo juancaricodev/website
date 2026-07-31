@@ -3,8 +3,7 @@ import styles from "./About.module.css";
 export default function About() {
   return (
     <section className={styles.section} id="about">
-      <h2 className={styles.title}>About Me</h2>
-      <h1 className={styles.name}>Juan Camilo Rico</h1>
+      <h1 className={styles.name}>Juanca Rico</h1>
       <p className={styles.content}>
         I'm a Software Engineer with 4+ years of experience building web
         products at scale at Mercado Libre. After an intentional sabbatical year
