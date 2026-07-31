@@ -76,6 +76,17 @@ Owner decision: NO role tagline ("Senior Frontend Engineer" was considered). Own
 | Keep brand-600 drawer | Solid blue block is exactly what Phase 2 removes (footer precedent) | Rejected |
 | **Drawer: surface-raised + 1px border + shadow, text-primary links (brand-600 hover + focus ring), icons without `invert(1)`, 1px divider; burger keeps brand-600 fill (matches primary buttons), drops opacity 0.92, adds hover scale + focus ring** | Consistent surfaces; burger stays a recognizable floating accent | **Chosen** |
 
+### Mobile responsiveness regression — navbar menu hide
+
+The nextjs-migration port (`ff2775b`) dropped the vanilla `@media (max-width: 768px) { .navbar__menu { display: none } }` rule — the desktop navbar renders at every viewport, duplicating navigation on mobile (desktop links + burger + drawer). Found during Phase 1 visual review.
+
+| Option | Tradeoff | Verdict |
+|---|---|---|
+| Full responsive audit as separate change | Overhead for a known 2-rule regression | Rejected |
+| **Restore the vanilla rule as task 1.3 (navbar menu hidden ≤768px) + task 2.2 addition (`.links` column ≤425px, mirrors vanilla `.work__item-links`)** | Same 2 rules the vanilla shipped; zero TSX; lives inside the phase touching each file | **Chosen** |
+
+Owner decision (2026-07-30): fold the regression fix into this change (option 1) — no separate SDD cycle.
+
 ## File Changes
 
 | File | Action | Description |
