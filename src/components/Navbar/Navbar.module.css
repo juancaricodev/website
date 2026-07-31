@@ -18,12 +18,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--color-black);
+  color: var(--color-text-primary);
 }
 
 .logo span {
   font-weight: 700;
-  color: var(--color-blue);
+  color: var(--color-brand-600);
 }
 
 .logoText {
@@ -51,20 +51,20 @@
 
 .navLink {
   padding: 2px 10px;
-  color: var(--color-black);
-  border: 1px solid var(--color-white);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-neutral-50);
   border-radius: 7px;
   transition: 0.3s;
 }
 
 .navLink:hover {
-  color: var(--color-white);
-  background-color: var(--color-blue);
+  color: var(--color-neutral-50);
+  background-color: var(--color-brand-600);
 }
 
 .divider {
   height: 30px;
-  border-left: 3px solid var(--color-black);
+  border-left: 3px solid var(--color-text-primary);
 }
 
 .socialLinks {
