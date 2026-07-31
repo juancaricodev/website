@@ -21,7 +21,7 @@
 
 ## Phase 4: Footer
 
-- [ ] 4.1 `Footer.module.css` — Full-width; `border-top: 1px solid var(--color-border)`; transparent bg (dots show through); `padding: var(--space-xl) max(24px, calc(50% - 360px))` — KEEP THIS EXPRESSION VERBATIM; text `--color-text-secondary`; `--color-brand-600` only in the logo wordmark span; divider `1px solid var(--color-neutral-300)`; remove `invert(1)` on icons AND favicon filter hack; remove fixed `height: 100px`; keep 425px column layout. Zero TSX change.
+- [x] 4.1 `Footer.module.css` — Full-width; `border-top: 1px solid var(--color-border)`; transparent bg (dots show through); `padding: var(--space-xl) max(24px, calc(50% - 360px))` — KEEP THIS EXPRESSION VERBATIM; text `--color-text-secondary`; `--color-brand-600` only in the logo wordmark span; divider `1px solid var(--color-neutral-300)`; remove `invert(1)` on icons AND favicon filter hack; remove fixed `height: 100px`; keep 425px column layout. Zero TSX change.
 
 ## Phase 5: Verify
 

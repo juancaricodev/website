@@ -1,13 +1,12 @@
 .footer {
-  height: 100px;
-  padding: 20px 20%;
+  padding: var(--space-xl) max(24px, calc(50% - 360px));
   margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 25px;
-  color: var(--color-neutral-50);
-  background-color: var(--color-brand-600);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
 }
 
 .description {
@@ -26,12 +25,13 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--color-neutral-50);
+  color: var(--color-text-primary);
   text-decoration: none;
 }
 
 .logo span {
   font-weight: 600;
+  color: var(--color-brand-600);
 }
 
 .logoText {
@@ -40,12 +40,11 @@
 
 .logoIcon {
   height: 30px;
-  filter: invert(0.9) sepia(1) saturate(0.4) hue-rotate(170deg);
 }
 
 .divider {
   height: 60%;
-  border-left: 3px solid var(--color-neutral-50);
+  border-left: 1px solid var(--color-neutral-300);
 }
 
 .contact {
@@ -68,13 +67,11 @@
 
 .socialIcon {
   height: 25px;
-  filter: invert(1);
   transition: 0.25s;
 }
 
 @media only screen and (max-width: 425px) {
   .footer {
-    height: 200px;
     flex-direction: column;
   }
 
