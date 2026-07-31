@@ -6,12 +6,16 @@ Token-only surface refresh across 7 components, one task each (Navbar → Mobile
 
 ## Architecture Decisions
 
-### Navbar width — 720px grid
+### Navbar width — 1000px grid (revised from 720px)
 
 | Option | Tradeoff | Verdict |
 |---|---|---|
-| Keep 1000px, centered | Edges misalign with the 720px column below (flagged weakness) | Rejected |
-| **max-width: 720px, `margin: 0 auto`, padding 20px 24px** | Content edges line up with the page column; Phase 1 language | **Chosen** |
+| 720px aligned to the content column | Content measures ~945px (logo 250px + links 580px + divider/social 115px) vs 672px available (720−48 padding) — overflow guaranteed, logo collides with first link, `space-between` gap can't materialize | Rejected (measured post-Phase-1 review) |
+| **max-width: 1000px, `margin: 0 auto`, padding 20px 24px, `gap: 16px`** | 952px available vs ~917px content (logo at 26px) — fits with explicit 16px separation between logo and menu; also fixes overflow at 769–960px viewports | **Chosen** |
+
+Header chrome is wider than the 720px content column by convention — navigation needs the room; the content column alignment applies to sections, not the navbar.
+
+Logo text refined to 26px (from 30px) so the visual hierarchy vs 20px nav links is 6px, not 10px. Links stay 20px untouched.
 
 ### Navbar links — borderless hover/focus
 
