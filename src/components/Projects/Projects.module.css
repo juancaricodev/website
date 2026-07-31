@@ -36,8 +36,8 @@
 .stack span {
   padding: var(--space-xs) 10px;
   font-size: var(--font-size-caption);
-  color: var(--color-neutral-50);
-  background-color: var(--color-brand-600);
+  color: var(--color-brand-800);
+  background-color: var(--color-brand-100);
   border-radius: 15px;
 }
 
