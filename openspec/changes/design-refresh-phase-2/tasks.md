@@ -16,8 +16,8 @@
 
 ## Phase 3: About + Contact
 
-- [ ] 3.1 `About.tsx` + `About.module.css` — h1 becomes the name (display 48px, `--line-height-display`); NO role tagline (owner rejected); bio split into 4 `<p>` at existing `<br /><br />` boundaries, ALL text preserved verbatim, `<br />` removed; `id="about"` stays on the section.
-- [ ] 3.2 `Contact.tsx` + `Contact.module.css` — Wrap section content in `<div className={styles.card}>`; card: `var(--color-surface-raised)` + `1px solid var(--color-border)` + `border-radius: 12px` + `padding: var(--space-xl)` + static `box-shadow: 0 4px 16px var(--color-neutral-alpha-10)`; centered text; email link `--color-brand-600` → hover `--color-brand-500` + focus ring.
+- [x] 3.1 `About.tsx` + `About.module.css` — "About Me" becomes h2 (keeps `styles.title`); NEW h1 with the owner's full name "Juan Camilo Rico" (display 48px, `--line-height-display`, class `styles.name`); NO role tagline (owner rejected); bio split into 4 `<p>` at existing `<br /><br />` boundaries, ALL text preserved verbatim, `<br />` removed; `id="about"` stays on the section. This is the ONLY TSX edit for the headline.
+- [x] 3.2 `Contact.tsx` + `Contact.module.css` — Wrap section content in `<div className={styles.card}>`; card: `var(--color-surface-raised)` + `1px solid var(--color-border)` + `border-radius: 12px` + `padding: var(--space-xl)` + static `box-shadow: 0 4px 16px var(--color-neutral-alpha-10)`; centered text; email link `--color-brand-600` → hover `--color-brand-500` + focus ring.
 
 ## Phase 4: Footer
 

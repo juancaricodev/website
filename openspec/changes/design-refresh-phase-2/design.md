@@ -55,9 +55,9 @@ No `--shadow-card` token (would be a globals.css change). Transition border-colo
 | Option | Tradeoff | Verdict |
 |---|---|---|
 | Keep "About Me" h1, name as h2 | Hero diluted; display scale belongs to the h1 | Rejected |
-| **Name = h1 (48px display, line-height display); bio = 4 `<p>` blocks split at the existing `<br /><br />` boundaries** | One strong h1 for the page topic; ALL bio text preserved verbatim; `id="about"` stays on the section; `<br />` removed | **Chosen** |
+| **Name = h1 (48px display, line-height display); "About Me" stays as h2 (owner); bio = 4 `<p>` blocks split at the existing `<br /><br />` boundaries** | One strong h1 for the page topic (the owner's full name, "Juan Camilo Rico"); section title preserved one level down; ALL bio text preserved verbatim; `id="about"` stays on the section; `<br />` removed | **Chosen** |
 
-Owner decision: NO role tagline ("Senior Frontend Engineer" was considered). Owner does not want a job-title label on a personal site — labels belong in LinkedIn/CV, not here. The headline is the name only.
+Owner decision: NO role tagline ("Senior Frontend Engineer" was considered). Owner does not want a job-title label on a personal site — labels belong in LinkedIn/CV, not here. The headline is the name only. Owner decision (2026-07-30): h1 = "Juan Camilo Rico" (full name), "About Me" remains as h2 above the name.
 
 ### Contact — elevated card wrapper
 

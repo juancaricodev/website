@@ -7,6 +7,13 @@
   color: var(--color-brand-600);
 }
 
+.name {
+  font-size: var(--font-size-display);
+  line-height: var(--line-height-display);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+}
+
 .content {
   color: var(--color-text-primary);
 }

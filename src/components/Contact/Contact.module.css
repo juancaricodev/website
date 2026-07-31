@@ -2,6 +2,15 @@
   margin-top: var(--space-2xl);
 }
 
+.card {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-xl);
+  box-shadow: 0 4px 16px var(--color-neutral-alpha-10);
+  text-align: center;
+}
+
 .title {
   margin-bottom: var(--space-lg);
   color: var(--color-brand-600);
@@ -16,10 +25,15 @@
 .info a {
   color: var(--color-brand-600);
   font-weight: var(--font-weight-semibold);
-  transition: opacity 0.3s;
+  transition: color 0.3s;
   text-decoration: none;
 }
 
 .info a:hover {
-  opacity: 0.7;
+  color: var(--color-brand-500);
+}
+
+.info a:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
 }
